@@ -64,7 +64,7 @@ void sgemm_v2(int N, float* A, float* B, float* C) {
 }
 
 **V3_**
-使用 Intel AVX2 函数，利用 256-bit 寄存器，一次处理八个浮点数：
+使用 AVX2 函数，smid向量化，一次处理八个浮点数：
 
 #include <immintrin.h> // 引入 SIMD 头文件
 
